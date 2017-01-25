@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent" a:layout_height="match_parent"
+    a:orientation="vertical">
+<RelativeLayout
+    a:layout_width="match_parent"
+    a:layout_height="200dp">
+    <ImageView
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_centerHorizontal="true"
+        a:layout_centerVertical="true"
+        a:background="@drawable/profile_img"/>
+    <LinearLayout
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignParentRight="true"
+        a:layout_alignParentTop="true"
+        a:layout_marginRight="10dp"
+        a:layout_marginTop="10dp"
+        a:background="@drawable/rectangle"
+        a:orientation="vertical">
+        <TextView
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:text="@string/followers"
+            a:textSize="15dp"/>
+       <TextView
+           a:layout_width="wrap_content"
+           a:layout_height="wrap_content"
+           a:text="0 People"
+           a:textSize="15dp"/>
+    </LinearLayout>
+</RelativeLayout>
+    <android.support.design.widget.TabLayout
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        app:tabMode="scrollable">
+
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        a:layout_width="match_parent"
+        a:layout_height="0dp"
+        a:layout_weight="1"></android.support.v4.view.ViewPager>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent" a:layout_height="match_parent"
+    a:orientation="vertical">
+    <LinearLayout
+        a:id="@+id/nameWrappper"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_alignParentTop="true"
+        a:layout_marginTop="25dp"
+        a:orientation="horizontal"
+        a:paddingLeft="10dp"
+        a:paddingRight="10dp">
+        <EditText
+            a:layout_width="0dp"
+            a:layout_height="100dp"
+            a:layout_weight="1"
+            a:inputType="text"
+            a:hint="First Name"
+            a:textSize="25dp"/>
+        <EditText
+            a:layout_width="0dp"
+            a:layout_height="100dp"
+            a:layout_weight="1"
+            a:inputType="text"
+            a:hint="Last Name"
+            a:textSize="25dp" />
+    </LinearLayout>
+    <EditText
+        a:id="@+id/email"
+        a:layout_width="match_parent"
+        a:layout_height="100dp"
+        a:layout_below="@+id/nameWrappper"
+        a:inputType="textEmailAddress"
+        a:hint="Email"
+        a:textSize="25dp"
+        a:paddingLeft="10dp"/>
+    <EditText
+        a:id="@+id/phone"
+        a:layout_width="match_parent"
+        a:layout_height="100dp"
+        a:layout_below="@+id/email"
+        a:inputType="textPhonetic"
+        a:hint="Phone Number"
+        a:textSize="25dp"
+        a:paddingLeft="10dp"/>
+    <RadioGroup
+        a:layout_width="match_parent"
+        a:layout_height="30dp"
+        a:layout_below="@+id/phone"
+        a:layout_marginBottom="@dimen/activity_vertical_margin"
+        a:layout_marginLeft="50dp"
+        a:layout_marginRight="50dp"
+        a:background="@drawable/gender_bg"
+        a:checkedButton="@+id/female"
+        a:orientation="horizontal">
+        <RadioButton
+            a:id="@+id/male"
+            a:layout_width="0dp"
+            a:layout_height="match_parent"
+            a:layout_marginBottom="1dp"
+            a:layout_marginLeft="1dp"
+            a:layout_marginTop="1dp"
+            a:layout_weight="1"
+            a:background="@drawable/gender_switch"
+            a:gravity="center"
+            a:text="Male"
+            a:textColor="@color/colorPrimary"
+            a:textSize="25dp"
+            a:button="@android:color/transparent" />
+
+        <RadioButton
+            a:id="@+id/female"
+            a:layout_width="0dp"
+            a:layout_height="match_parent"
+            a:layout_marginBottom="1dp"
+            a:layout_marginRight="1dp"
+            a:layout_marginTop="1dp"
+            a:layout_weight="1"
+            a:background="@drawable/gender_switch"
+            a:gravity="center"
+            a:text="Female"
+            a:textColor="@color/colorPrimary"
+            a:textSize="25dp"
+            a:button="@android:color/transparent"/>
+    </RadioGroup>
+    <Button
+        a:layout_width="match_parent"
+        a:layout_height="75dp"
+        a:layout_alignParentBottom="true"
+        a:background="@color/colorPrimaryDark"
+        a:gravity="center"
+        a:text="Sign In"
+        a:textColor="@android:color/white"
+        a:textSize="35dp"
+        a:onClick="OnClickSignUp"/>
+</RelativeLayout>

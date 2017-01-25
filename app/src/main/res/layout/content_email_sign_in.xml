@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+a:layout_width="match_parent"
+a:layout_height="match_parent"
+a:background="@android:color/background_light"
+a:orientation="vertical">
+<ImageView
+    a:layout_width="match_parent"
+    a:layout_height="300dp"
+    a:layout_alignParentTop="true"
+    a:layout_gravity="center_horizontal"
+    a:src="@drawable/logo"/>
+<EditText
+    a:id="@+id/userid"
+    a:layout_width="match_parent"
+    a:layout_height="50dp"
+    a:layout_above="@+id/password"
+    a:hint="Username"
+    a:inputType="text"
+    a:paddingLeft="10dp"
+    a:paddingRight="10dp"
+    a:textSize="25dp"/>
+<EditText
+    a:id="@+id/password"
+    a:layout_width="match_parent"
+    a:layout_height="50dp"
+    a:layout_above="@+id/signIn"
+    a:hint="Password"
+    a:inputType="textPassword"
+    a:paddingLeft="10dp"
+    a:paddingRight="10dp"
+    a:textSize="25dp"/>
+
+<Button
+    a:id="@+id/signIn"
+    a:layout_width="match_parent"
+    a:layout_height="50dp"
+    a:layout_above="@+id/wrapper"
+    a:layout_marginBottom="10dp"
+    a:layout_marginLeft="10dp"
+    a:layout_marginRight="10dp"
+    a:background="@color/colorPrimary"
+    a:gravity="center"
+    a:text="Sign In"
+    a:textSize="25dp"/>
+<RelativeLayout
+    a:id="@+id/wrapper"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:layout_above="@id/logingplus"
+    a:layout_marginBottom="10dp"
+    a:layout_marginLeft="10dp"
+    a:layout_marginRight="10dp"
+    a:layout_marginTop="10dp">
+    <TextView
+        a:id="@+id/forgotPassword"
+        a:layout_width="wrap_content"
+        a:layout_height="30dp"
+        a:layout_alignParentLeft="true"
+        a:clickable="true"
+        a:text="Forgot Password"
+        a:textSize="20sp"
+        a:onClick="OnClickForgotPassword"/>
+    <TextView
+        a:id="@+id/newHere"
+        a:layout_width="wrap_content"
+        a:layout_height="30dp"
+        a:layout_alignParentRight="true"
+        a:clickable="true"
+        a:text="New Here"
+        a:textSize="20sp"
+        a:onClick="OnClickSignUp"/>
+</RelativeLayout>
+<ImageButton
+    a:id="@+id/logingplus"
+    a:layout_width="match_parent"
+    a:layout_height="60dp"
+    a:layout_above="@id/loginfb"
+    a:paddingBottom="10dp"
+    a:paddingLeft="10dp"
+    a:paddingRight="10dp"
+    a:scaleType="fitXY"
+    a:src="@drawable/logingoogle"/>
+<ImageButton
+    a:id="@+id/loginfb"
+    a:layout_width="match_parent"
+    a:layout_height="60dp"
+    a:layout_above="@id/signInWithEmail"
+    a:layout_alignParentBottom="true"
+    a:paddingBottom="10dp"
+    a:paddingLeft="10dp"
+    a:paddingRight="10dp"
+    a:scaleType="fitXY"
+    a:src="@drawable/loginfb"/>
+</RelativeLayout>

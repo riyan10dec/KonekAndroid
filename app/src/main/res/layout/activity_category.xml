@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent" a:layout_height="match_parent"
+    a:orientation="vertical">
+    <LinearLayout
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:paddingLeft="15dp"
+        a:paddingRight="15dp">
+        <ImageButton
+            a:layout_width="0dp"
+            a:layout_height="wrap_content"
+            a:layout_weight=".10"
+            />
+        <TextView
+            a:layout_width="0dp"
+            a:layout_height="wrap_content"
+            a:hint="What are you looking for"
+            a:textAlignment="center"
+            a:layout_weight=".80"
+            a:textSize="20dp"/>
+        <ImageView
+            a:layout_width="0dp"
+            a:layout_height="20dp"
+            a:layout_weight=".10"
+            a:onClick="OnClickCategoryNext"
+            a:src="@drawable/circle"/>
+    </LinearLayout>
+<TextView
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:gravity="center_horizontal"
+    a:padding="10dp"
+    a:text="Select 10 topics that you interested in"
+    a:textSize="20dp"/>
+    <ScrollView
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content">
+        <LinearLayout
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:padding="20dp"
+            a:orientation="vertical">
+            <TextView
+                a:layout_width="match_parent"
+                a:layout_height="30dp"
+                a:id="@+id/categoryPickName"
+                a:textAlignment="center"
+                a:textSize="20dp"
+                />
+            <TableLayout
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:id="@+id/categoryTable"
+                a:orientation="horizontal"
+                a:stretchColumns="*">
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
